@@ -1,5 +1,32 @@
 {% extends 'layout.html' %}
 
-{% block content %}
 
-{% endblock content %}
+
+{% block main_page %}
+
+<div class="wrapper">
+    <div class="empty_block"></div>
+    <div class="info">
+
+        <div class="description">
+            <p class="names">ТЕМЫ БЛОГА:</p>
+
+            <div class="desc">
+                <ul class="checkmark">
+                    <li><a href="{{ url_for('html_page') }}">HTML</a></li>
+                    <li><a href="{{ url_for('css_page') }}">CSS</a></li>
+                    <li><a href="{{ url_for('python_page') }}">PYTHON</a></li>
+                    <li><a href="{{ url_for('js_page') }}">JAVA SCRIPT</a></li>
+                    <li><a href="{{ url_for('flask_page') }}">FLASK</a></li>
+                    <li><a href="{{ url_for('django_page') }}">DJANGO</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+{% endblock main_page %}
